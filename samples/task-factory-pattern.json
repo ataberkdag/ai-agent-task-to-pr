@@ -1,0 +1,5 @@
+{
+  "taskId": "TASK-1",
+  "title": "Add factory pattern to create user flow",
+  "description": "Repository: https://github.com/YOUR_USER/user-service-dotnet-demo\nBranch: develop\n\nRequirement: add factory pattern to create user flow.\n\nAcceptance Criteria:\nuser must be created with factories\nadd or update unit tests"
+}

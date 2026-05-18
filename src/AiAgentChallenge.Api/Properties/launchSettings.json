@@ -1,0 +1,49 @@
+{
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5112"
+    },
+    "https": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "OPENAI_API_KEY": "",
+        "GITHUB_TOKEN": "",
+        "WORKSPACE_ROOT": "./workspaces",
+        "AI_MODEL": "gpt-5.4",
+        "RepositoryPolicy__AllowedHosts__0": "github.com",
+        "RepositoryPolicy__AllowedOwners__0": "",
+        "GEMINI_API_KEY": "",
+        "AI_PROVIDER": "OpenAI"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7025;http://localhost:5112"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:59315",
+      "sslPort": 44327
+    }
+  }
+}

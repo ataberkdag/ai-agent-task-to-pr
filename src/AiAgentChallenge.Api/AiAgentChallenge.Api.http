@@ -1,0 +1,6 @@
+@AiAgentChallenge.Api_HostAddress = http://localhost:5112
+
+GET {{AiAgentChallenge.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

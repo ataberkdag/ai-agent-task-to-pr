@@ -1,0 +1,629 @@
+{
+  "executionId": "302279a1-8a08-4a41-82f7-e04d8c66fc90",
+  "taskId": "TASK-1",
+  "status": 2,
+  "traceId": "0HNLL0OQ5QSVD:00000008",
+  "createdAtUtc": "2026-05-18T17:54:58.9251288+00:00",
+  "message": "Task execution completed through parsing, repository preparation, AI change generation, validation, build verification, test execution, and GitHub pull request finalization.",
+  "timeline": [
+    {
+      "step": "RepositoryPolicyValidation",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:54:58.9335714+00:00",
+      "finishedAtUtc": "2026-05-18T17:54:58.9346208+00:00",
+      "durationMs": 1,
+      "message": "Repository policy validation succeeded."
+    },
+    {
+      "step": "WorkspaceCreation",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:54:58.9382045+00:00",
+      "finishedAtUtc": "2026-05-18T17:54:58.9413164+00:00",
+      "durationMs": 3,
+      "message": "Workspace created at E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755."
+    },
+    {
+      "step": "RepositoryClone",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:54:58.9441585+00:00",
+      "finishedAtUtc": "2026-05-18T17:54:59.9814423+00:00",
+      "durationMs": 1037,
+      "message": "Repository clone succeeded."
+    },
+    {
+      "step": "RepositoryAnalysis",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:54:59.9842051+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:00.0554004+00:00",
+      "durationMs": 71,
+      "message": "Repository analysis succeeded."
+    },
+    {
+      "step": "DotNetSolutionBaselineCapture",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:00.0581304+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:00.3777527+00:00",
+      "durationMs": 319,
+      "message": "Solution baseline captured for E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.slnx."
+    },
+    {
+      "step": "AgentContextBuild",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:00.3804045+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:00.3865285+00:00",
+      "durationMs": 6,
+      "message": "Agent context build succeeded."
+    },
+    {
+      "step": "AiGenerateChanges",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:00.389115+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:17.5297986+00:00",
+      "durationMs": 17140,
+      "message": "AI code generation succeeded."
+    },
+    {
+      "step": "AiValidateChanges",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:17.5298011+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:17.5299687+00:00",
+      "durationMs": 0,
+      "message": "AI changes validated successfully."
+    },
+    {
+      "step": "AiRegenerateFormatting",
+      "status": 3,
+      "startedAtUtc": "2026-05-18T17:55:17.529966+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:17.529966+00:00",
+      "durationMs": 0,
+      "message": "Formatting regeneration was not needed because the AI output was already well-formed."
+    },
+    {
+      "step": "ApplyFileChanges",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:17.5317383+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:17.5365413+00:00",
+      "durationMs": 4,
+      "message": "Applied 7 file change(s)."
+    },
+    {
+      "step": "DotNetSolutionSync",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:17.536547+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:18.1868319+00:00",
+      "durationMs": 650,
+      "message": "Solution sync completed. Added: 1, Removed: 0."
+    },
+    {
+      "step": "BuildValidationAttempt1",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:18.1895512+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:20.7551624+00:00",
+      "durationMs": 2565,
+      "message": "Build attempt 1 finished with status Passed."
+    },
+    {
+      "step": "TestRunAttempt1",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:20.7570445+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:25.4835724+00:00",
+      "durationMs": 4726,
+      "message": "Test attempt 1 finished with status Passed."
+    },
+    {
+      "step": "AiFixAttempt",
+      "status": 3,
+      "startedAtUtc": "2026-05-18T17:55:25.4852309+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:25.4852309+00:00",
+      "durationMs": 0,
+      "message": "AI fix attempt was not needed because the first test run passed."
+    },
+    {
+      "step": "ApplyFixChanges",
+      "status": 3,
+      "startedAtUtc": "2026-05-18T17:55:25.4852315+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:25.4852315+00:00",
+      "durationMs": 0,
+      "message": "AI fix changes were not needed because the first test run passed."
+    },
+    {
+      "step": "DotNetSolutionSyncAfterFix",
+      "status": 3,
+      "startedAtUtc": "2026-05-18T17:55:25.4852369+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:25.4852369+00:00",
+      "durationMs": 0,
+      "message": "Solution sync after fix was not needed because the first test run passed."
+    },
+    {
+      "step": "BuildValidationAttempt2",
+      "status": 3,
+      "startedAtUtc": "2026-05-18T17:55:25.4852371+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:25.4852371+00:00",
+      "durationMs": 0,
+      "message": "Second build attempt was not needed because the first test run passed."
+    },
+    {
+      "step": "TestRunAttempt2",
+      "status": 3,
+      "startedAtUtc": "2026-05-18T17:55:25.4852376+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:25.4852376+00:00",
+      "durationMs": 0,
+      "message": "Second test attempt was not needed because the first test run passed."
+    },
+    {
+      "step": "GitDiffSummary",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:25.4870237+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:25.5852053+00:00",
+      "durationMs": 98,
+      "message": "Git diff summary collected."
+    },
+    {
+      "step": "GitCreateBranch",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:25.5852412+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:25.6443223+00:00",
+      "durationMs": 59,
+      "message": "Branch 'ai-agent/TASK-1-add-factory-pattern-to-create-user-flow' created."
+    },
+    {
+      "step": "GitCommit",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:25.6443266+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:25.87176+00:00",
+      "durationMs": 227,
+      "message": "Commit 'TASK-1 Add factory pattern to create user flow' created."
+    },
+    {
+      "step": "GitPush",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:25.8717917+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:27.1480829+00:00",
+      "durationMs": 1276,
+      "message": "Branch 'ai-agent/TASK-1-add-factory-pattern-to-create-user-flow' pushed successfully."
+    },
+    {
+      "step": "PullRequestCreateOrGet",
+      "status": 1,
+      "startedAtUtc": "2026-05-18T17:55:27.1482733+00:00",
+      "finishedAtUtc": "2026-05-18T17:55:28.7582935+00:00",
+      "durationMs": 1610,
+      "message": "Pull request created: https://github.com/ataberkdag/ai-agent-challange-test-repo/pull/42"
+    }
+  ],
+  "parsedTask": {
+    "taskId": "TASK-1",
+    "repositoryUrl": "https://github.com/ataberkdag/ai-agent-challange-test-repo",
+    "baseBranch": "develop",
+    "requirement": "add factory pattern to create user flow.",
+    "acceptanceCriteria": [
+      "user must be created with factories",
+      "add or update unit tests"
+    ]
+  },
+  "workspacePath": "E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755",
+  "repositoryPath": "E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source",
+  "cloneStatus": 1,
+  "repositoryAnalysis": {
+    "language": "C#",
+    "framework": "ASP.NET Core",
+    "buildTool": "dotnet",
+    "testCommand": "dotnet test",
+    "testFramework": "Unknown",
+    "availableTestLibraries": [],
+    "targetFramework": "net8.0",
+    "targetFrameworks": [],
+    "langVersion": "",
+    "projectFiles": [
+      "UserManagement.slnx",
+      "UserManagement.Api/UserManagement.Api.csproj",
+      "UserManagement.Application/UserManagement.Application.csproj",
+      "UserManagement.Domain/UserManagement.Domain.csproj"
+    ],
+    "relevantFiles": [
+      "UserManagement.Api/Controllers/UsersController.cs",
+      "UserManagement.Api/Program.cs",
+      "UserManagement.Application/Contracts/CreateUserRequest.cs",
+      "UserManagement.Application/Contracts/IUserApplicationService.cs",
+      "UserManagement.Application/Contracts/UserResponse.cs",
+      "UserManagement.Application/Services/UserApplicationService.cs",
+      "UserManagement.Domain/Entities/AdminUser.cs",
+      "UserManagement.Domain/Entities/CustomerUser.cs",
+      "UserManagement.Domain/Entities/GuestUser.cs",
+      "UserManagement.Domain/Entities/User.cs"
+    ],
+    "existingTestFiles": [],
+    "apiEndpoints": [
+      {
+        "httpMethod": "GET",
+        "route": "/api/Users",
+        "sourceFile": "UserManagement.Api/Controllers/UsersController.cs",
+        "handlerName": "UsersController.GetAll",
+        "style": "Controller"
+      },
+      {
+        "httpMethod": "POST",
+        "route": "/api/Users",
+        "sourceFile": "UserManagement.Api/Controllers/UsersController.cs",
+        "handlerName": "UsersController.Create",
+        "style": "Controller"
+      }
+    ],
+    "symbols": [
+      {
+        "kind": "method",
+        "symbolType": "method",
+        "name": "Create",
+        "namespace": "UserManagement.Api.Controllers",
+        "sourceFile": "UserManagement.Api/Controllers/UsersController.cs",
+        "displaySignature": "ActionResult<UserResponse> Create([FromBody] CreateUserRequest request)",
+        "returnType": "ActionResult<UserResponse>",
+        "parameters": [
+          {
+            "name": "request",
+            "type": "[FromBody] CreateUserRequest",
+            "ordinal": 0,
+            "isOptional": false
+          }
+        ],
+        "constructorDependencies": [],
+        "routeAttributes": [
+          "HttpPost"
+        ],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "method",
+        "symbolType": "method",
+        "name": "GetAll",
+        "namespace": "UserManagement.Api.Controllers",
+        "sourceFile": "UserManagement.Api/Controllers/UsersController.cs",
+        "displaySignature": "ActionResult<IReadOnlyCollection<UserResponse>> GetAll()",
+        "returnType": "ActionResult<IReadOnlyCollection<UserResponse>>",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [
+          "HttpGet"
+        ],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "class",
+        "symbolType": "class",
+        "name": "UsersController",
+        "namespace": "UserManagement.Api.Controllers",
+        "sourceFile": "UserManagement.Api/Controllers/UsersController.cs",
+        "displaySignature": "",
+        "returnType": "",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [
+          "Route(\"api/[controller]\")",
+          "HttpPost",
+          "HttpGet"
+        ],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "method",
+        "symbolType": "method",
+        "name": "UsersController",
+        "namespace": "UserManagement.Api.Controllers",
+        "sourceFile": "UserManagement.Api/Controllers/UsersController.cs",
+        "displaySignature": "sealed class UsersController(IUserApplicationService userApplicationService)",
+        "returnType": "sealed class",
+        "parameters": [
+          {
+            "name": "userApplicationService",
+            "type": "IUserApplicationService",
+            "ordinal": 0,
+            "isOptional": false
+          }
+        ],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "class",
+        "symbolType": "class",
+        "name": "CreateUserRequest",
+        "namespace": "UserManagement.Application.Contracts",
+        "sourceFile": "UserManagement.Application/Contracts/CreateUserRequest.cs",
+        "displaySignature": "",
+        "returnType": "",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "interface",
+        "symbolType": "interface",
+        "name": "IUserApplicationService",
+        "namespace": "UserManagement.Application.Contracts",
+        "sourceFile": "UserManagement.Application/Contracts/IUserApplicationService.cs",
+        "displaySignature": "",
+        "returnType": "",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "class",
+        "symbolType": "class",
+        "name": "UserResponse",
+        "namespace": "UserManagement.Application.Contracts",
+        "sourceFile": "UserManagement.Application/Contracts/UserResponse.cs",
+        "displaySignature": "",
+        "returnType": "",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "method",
+        "symbolType": "method",
+        "name": "Create",
+        "namespace": "UserManagement.Application.Services",
+        "sourceFile": "UserManagement.Application/Services/UserApplicationService.cs",
+        "displaySignature": "UserResponse Create(CreateUserRequest request)",
+        "returnType": "UserResponse",
+        "parameters": [
+          {
+            "name": "request",
+            "type": "CreateUserRequest",
+            "ordinal": 0,
+            "isOptional": false
+          }
+        ],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": [
+          "ArgumentException",
+          "AdminUser",
+          "CustomerUser",
+          "GuestUser"
+        ]
+      },
+      {
+        "kind": "method",
+        "symbolType": "method",
+        "name": "GetAll",
+        "namespace": "UserManagement.Application.Services",
+        "sourceFile": "UserManagement.Application/Services/UserApplicationService.cs",
+        "displaySignature": "IReadOnlyCollection<UserResponse> GetAll()",
+        "returnType": "IReadOnlyCollection<UserResponse>",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": [
+          "ArgumentException",
+          "AdminUser",
+          "CustomerUser",
+          "GuestUser"
+        ]
+      },
+      {
+        "kind": "class",
+        "symbolType": "class",
+        "name": "UserApplicationService",
+        "namespace": "UserManagement.Application.Services",
+        "sourceFile": "UserManagement.Application/Services/UserApplicationService.cs",
+        "displaySignature": "",
+        "returnType": "",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": [
+          "ArgumentException",
+          "AdminUser",
+          "CustomerUser",
+          "GuestUser"
+        ]
+      },
+      {
+        "kind": "class",
+        "symbolType": "class",
+        "name": "AdminUser",
+        "namespace": "UserManagement.Domain.Entities",
+        "sourceFile": "UserManagement.Domain/Entities/AdminUser.cs",
+        "displaySignature": "",
+        "returnType": "",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "method",
+        "symbolType": "method",
+        "name": "User",
+        "namespace": "UserManagement.Domain.Entities",
+        "sourceFile": "UserManagement.Domain/Entities/AdminUser.cs",
+        "displaySignature": "sealed class AdminUser(string userName) : User()",
+        "returnType": "sealed class AdminUser(string userName) :",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "class",
+        "symbolType": "class",
+        "name": "CustomerUser",
+        "namespace": "UserManagement.Domain.Entities",
+        "sourceFile": "UserManagement.Domain/Entities/CustomerUser.cs",
+        "displaySignature": "",
+        "returnType": "",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "method",
+        "symbolType": "method",
+        "name": "User",
+        "namespace": "UserManagement.Domain.Entities",
+        "sourceFile": "UserManagement.Domain/Entities/CustomerUser.cs",
+        "displaySignature": "sealed class CustomerUser(string userName) : User()",
+        "returnType": "sealed class CustomerUser(string userName) :",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "class",
+        "symbolType": "class",
+        "name": "GuestUser",
+        "namespace": "UserManagement.Domain.Entities",
+        "sourceFile": "UserManagement.Domain/Entities/GuestUser.cs",
+        "displaySignature": "",
+        "returnType": "",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "method",
+        "symbolType": "method",
+        "name": "User",
+        "namespace": "UserManagement.Domain.Entities",
+        "sourceFile": "UserManagement.Domain/Entities/GuestUser.cs",
+        "displaySignature": "sealed class GuestUser(string userName) : User()",
+        "returnType": "sealed class GuestUser(string userName) :",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": []
+      },
+      {
+        "kind": "class",
+        "symbolType": "class",
+        "name": "User",
+        "namespace": "UserManagement.Domain.Entities",
+        "sourceFile": "UserManagement.Domain/Entities/User.cs",
+        "displaySignature": "",
+        "returnType": "",
+        "parameters": [],
+        "constructorDependencies": [],
+        "routeAttributes": [],
+        "referencedTypeNames": []
+      }
+    ]
+  },
+  "solutionFile": "E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.slnx",
+  "aiModel": "gpt-5.4-2026-03-05",
+  "aiSummary": "Added a domain factory pattern for user creation, updated the application service to use the factory, wired factory registration into DI, and added focused xUnit unit tests covering factory-based creation and invalid user types.",
+  "changedFiles": [
+    "UserManagement.Api/Program.cs",
+    "UserManagement.Application/Services/UserApplicationService.cs",
+    "UserManagement.Domain/Factories/IUserFactory.cs",
+    "UserManagement.Domain/Factories/UserFactory.cs",
+    "UserManagement.slnx",
+    "UserManagement.Tests/Services/UserApplicationServiceTests.cs",
+    "UserManagement.Tests/UserManagement.Tests.csproj"
+  ],
+  "aiTestNotes": "Added xUnit unit tests for UserApplicationService to verify user creation goes through the factory-supported flow for Admin, Customer, and Guest types, and that unsupported types still throw the expected exception. Run with: dotnet test",
+  "aiWarnings": [
+    "UserManagement.Domain/Factories/IUserFactory.cs: AI proposed a change outside the analyzed relevant/test file set: UserManagement.Domain/Factories/IUserFactory.cs",
+    "UserManagement.Domain/Factories/UserFactory.cs: AI proposed a change outside the analyzed relevant/test file set: UserManagement.Domain/Factories/UserFactory.cs",
+    "UserManagement.Tests/UserManagement.Tests.csproj: AI proposed a change outside the analyzed relevant/test file set: UserManagement.Tests/UserManagement.Tests.csproj",
+    "UserManagement.Tests/Services/UserApplicationServiceTests.cs: AI proposed a change outside the analyzed relevant/test file set: UserManagement.Tests/Services/UserApplicationServiceTests.cs",
+    "UserManagement.slnx: AI proposed a change outside the analyzed relevant/test file set: UserManagement.slnx"
+  ],
+  "aiUsage": {
+    "model": "gpt-5.4-2026-03-05",
+    "inputTokens": 4137,
+    "outputTokens": 1646,
+    "totalTokens": 5783
+  },
+  "buildResults": [
+    {
+      "command": "dotnet build UserManagement.slnx",
+      "status": 0,
+      "exitCode": 0,
+      "duration": "00:00:02.5607081",
+      "stdout": "  Geri y├╝klenecek projeler belirleniyor...\r\n  E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Application\\UserManagement.Application.csproj geri y├╝klendi (98 ms i├ğinde).\r\n  E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Domain\\UserManagement.Domain.csproj geri y├╝klendi (91 ms i├ğinde).\r\n  E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Api\\UserManagement.Api.csproj geri y├╝klendi (231 ms i├ğinde).\r\n  E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Tests\\UserManagement.Tests.csproj geri y├╝klendi (238 ms i├ğinde).\r\n  UserManagement.Domain -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Domain\\bin\\Debug\\net8.0\\UserManagement.Domain.dll\r\n  UserManagement.Application -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Application\\bin\\Debug\\net8.0\\UserManagement.Application.dll\r\n  UserManagement.Tests -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Tests\\bin\\Debug\\net8.0\\UserManagement.Tests.dll\r\n  UserManagement.Api -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Api\\bin\\Debug\\net8.0\\UserManagement.Api.dll\r\n\r\nOlu┼şturma ba┼şar─▒l─▒ oldu.\r\n    0 Uyar─▒\r\n    0 Hata\r\n\r\nGe├ğen S├╝re 00:00:02.27\r\n",
+      "stdoutLines": [
+        "  Geri y├╝klenecek projeler belirleniyor...",
+        "  E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Application\\UserManagement.Application.csproj geri y├╝klendi (98 ms i├ğinde).",
+        "  E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Domain\\UserManagement.Domain.csproj geri y├╝klendi (91 ms i├ğinde).",
+        "  E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Api\\UserManagement.Api.csproj geri y├╝klendi (231 ms i├ğinde).",
+        "  E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Tests\\UserManagement.Tests.csproj geri y├╝klendi (238 ms i├ğinde).",
+        "  UserManagement.Domain -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Domain\\bin\\Debug\\net8.0\\UserManagement.Domain.dll",
+        "  UserManagement.Application -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Application\\bin\\Debug\\net8.0\\UserManagement.Application.dll",
+        "  UserManagement.Tests -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Tests\\bin\\Debug\\net8.0\\UserManagement.Tests.dll",
+        "  UserManagement.Api -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Api\\bin\\Debug\\net8.0\\UserManagement.Api.dll",
+        "",
+        "Olu┼şturma ba┼şar─▒l─▒ oldu.",
+        "    0 Uyar─▒",
+        "    0 Hata",
+        "",
+        "Ge├ğen S├╝re 00:00:02.27"
+      ],
+      "stderr": "",
+      "attemptNumber": 1
+    }
+  ],
+  "finalBuildStatus": 0,
+  "testResults": [
+    {
+      "command": "dotnet test",
+      "status": 0,
+      "exitCode": 0,
+      "duration": "00:00:04.7220779",
+      "stdout": "  Geri y├╝klenecek projeler belirleniyor...\r\n  Geri y├╝kleme i├ğin t├╝m projeler g├╝ncel.\r\n  UserManagement.Domain -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Domain\\bin\\Debug\\net8.0\\UserManagement.Domain.dll\r\n  UserManagement.Application -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Application\\bin\\Debug\\net8.0\\UserManagement.Application.dll\r\n  UserManagement.Tests -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Tests\\bin\\Debug\\net8.0\\UserManagement.Tests.dll\r\nE:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Tests\\bin\\Debug\\net8.0\\UserManagement.Tests.dll (.NETCoreApp,Version=v8.0) i├ğin test ├ğal─▒┼şt─▒rmas─▒\r\nToplam 1 test dosyas─▒ belirtilen desenle e┼şle┼şti.\r\n\r\nBa┼şar─▒l─▒!  - Ba┼şar─▒s─▒z:     0, Ba┼şar─▒l─▒:     4, Atlanan:     0, Toplam:     4, S├╝re: 123 ms - UserManagement.Tests.dll (net8.0)\r\n",
+      "stdoutLines": [
+        "  Geri y├╝klenecek projeler belirleniyor...",
+        "  Geri y├╝kleme i├ğin t├╝m projeler g├╝ncel.",
+        "  UserManagement.Domain -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Domain\\bin\\Debug\\net8.0\\UserManagement.Domain.dll",
+        "  UserManagement.Application -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Application\\bin\\Debug\\net8.0\\UserManagement.Application.dll",
+        "  UserManagement.Tests -> E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Tests\\bin\\Debug\\net8.0\\UserManagement.Tests.dll",
+        "E:\\Programming-Projects\\Github\\ai-agent-challange\\src\\AiAgentChallenge.Api\\bin\\Release\\net8.0\\publish\\workspaces\\TASK-1\\20260518175458-09a4a755\\source\\UserManagement.Tests\\bin\\Debug\\net8.0\\UserManagement.Tests.dll (.NETCoreApp,Version=v8.0) i├ğin test ├ğal─▒┼şt─▒rmas─▒",
+        "Toplam 1 test dosyas─▒ belirtilen desenle e┼şle┼şti.",
+        "",
+        "Ba┼şar─▒l─▒!  - Ba┼şar─▒s─▒z:     0, Ba┼şar─▒l─▒:     4, Atlanan:     0, Toplam:     4, S├╝re: 123 ms - UserManagement.Tests.dll (net8.0)"
+      ],
+      "stderr": "",
+      "attemptNumber": 1
+    }
+  ],
+  "finalTestStatus": 0,
+  "aiFixAttempted": false,
+  "aiFixSummary": "",
+  "changedFilesAfterFix": [],
+  "failureReason": "",
+  "branchName": "ai-agent/TASK-1-add-factory-pattern-to-create-user-flow",
+  "commitMessage": "TASK-1 Add factory pattern to create user flow",
+  "addedProjectsToSolution": [
+    "UserManagement.Tests/UserManagement.Tests.csproj"
+  ],
+  "removedProjectsFromSolution": [],
+  "gitChangedFiles": [
+    "UserManagement.Api/Program.cs",
+    "UserManagement.Application/Services/UserApplicationService.cs",
+    "UserManagement.Domain/Factories/IUserFactory.cs",
+    "UserManagement.Domain/Factories/UserFactory.cs",
+    "UserManagement.slnx",
+    "UserManagement.Tests/Services/UserApplicationServiceTests.cs",
+    "UserManagement.Tests/UserManagement.Tests.csproj"
+  ],
+  "diffSummary": "UserManagement.Api/Program.cs                      |  2 ++\n .../Services/UserApplicationService.cs             | 25 ++++++----------------\n UserManagement.slnx                                |  3 ++-\n 3 files changed, 10 insertions(+), 20 deletions(-)",
+  "diffSummaryLines": [
+    "UserManagement.Api/Program.cs                      |  2 ++",
+    " .../Services/UserApplicationService.cs             | 25 ++++++----------------",
+    " UserManagement.slnx                                |  3 ++-",
+    " 3 files changed, 10 insertions(+), 20 deletions(-)"
+  ],
+  "pushed": true,
+  "pullRequestUrl": "https://github.com/ataberkdag/ai-agent-challange-test-repo/pull/42",
+  "pullRequestNumber": 42,
+  "pullRequestStatus": 0,
+  "gitFinalizationStatus": 1
+}

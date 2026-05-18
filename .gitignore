@@ -10,6 +10,15 @@
 *.userosscache
 *.sln.docstates
 *.env
+.env.*
+workspaces/
+/execution-reports/
+/logs/
+src/AiAgentChallenge.Api/execution-reports/
+src/AiAgentChallenge.Api/logs/
+appsettings.Production.json
+*.pem
+*.key
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -55,6 +64,7 @@ bld/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
+.idea/
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
 
