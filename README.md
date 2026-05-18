@@ -39,6 +39,7 @@ The application uses both standard `.NET` configuration binding keys and a few c
 | `OPENAI_API_KEY` | Required when `AI_PROVIDER=OpenAI` or `Ai:Provider=OpenAI` | none |
 | `GEMINI_API_KEY` | Required when `AI_PROVIDER=Gemini` or `Ai:Provider=Gemini` | none |
 | `GITHUB_TOKEN` | Required for GitHub private repository clone, authenticated push, and pull request creation when `GitHub__TokenEnvironmentVariable` remains `GITHUB_TOKEN` | none |
+| `RepositoryPolicy__AllowedOwners__0` | required owner user id (for example ataberkdag) | `example-company` |
 
 ### Optional Variables
 | Variable | Purpose | Default |
@@ -56,7 +57,6 @@ The application uses both standard `.NET` configuration binding keys and a few c
 | `Ai__RequestTimeoutSeconds` | AI request timeout | `300` |
 | `Ai__MaxTestFixAttempts` | Maximum AI-based test fix retries | `1` |
 | `RepositoryPolicy__AllowedHosts__0` | First allowlisted host example | `github.com` |
-| `RepositoryPolicy__AllowedOwners__0` | First allowlisted owner example | `example-company` |
 | `RepositoryPolicy__DisallowedHosts__0` | First denylisted host example | empty |
 | `RepositoryPolicy__DisallowedOwners__0` | First denylisted owner example | empty |
 | `Git__CloneTimeoutSeconds` | Git clone timeout | `120` |
